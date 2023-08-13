@@ -37,7 +37,7 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public Question getRandomQuestion() {
         List<Question> questionList = new ArrayList<>(questionRepository.getAllQuestions());
-        int randomQuestionNumber = random.nextInt(questionList.size()); // рандомное число в размере листа
+        int randomQuestionNumber = random.nextInt(questionList.size());
         return questionList.get(randomQuestionNumber);
     }
 }

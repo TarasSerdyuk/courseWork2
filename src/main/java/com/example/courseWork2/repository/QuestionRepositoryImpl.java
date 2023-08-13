@@ -37,6 +37,6 @@ public class QuestionRepositoryImpl implements QuestionRepository {
 
     @Override
     public Collection<Question> getAllQuestions() {
-        return Collections.unmodifiableSet(questionSet); // возращается копия сета, доступно только для чтения
+        return Collections.unmodifiableSet(questionSet);
     }
 }
